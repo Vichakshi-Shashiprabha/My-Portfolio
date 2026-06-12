@@ -1,0 +1,29 @@
+.projects-display-wrapper {
+  padding: 1rem 0;
+}
+
+.section-header-box {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-header-box h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, #7c3aed, #db2777);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-header-box p {
+  color: #64748b;
+  font-size: 1.05rem;
+}
+
+.interfaces-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem;
+}

@@ -1,0 +1,15 @@
+.section-title-box {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.section-title-box h2 {
+  font-size: 1.75rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle-text {
+  color: #6b7280;
+  font-size: 1rem;
+}
