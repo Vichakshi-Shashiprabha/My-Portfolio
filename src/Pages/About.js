@@ -26,7 +26,7 @@ function About() {
       category: "Group Project",
       tech: "Visual Hierarchy",
       description: "Constructed user interaction spaces optimized for rapid collaborative workspace updates and dynamic filtering.",
-      image: "/images/My Groups.jpg"
+      image: "/images/MyGroups.jpg"
     },
     {
       id: 4,
