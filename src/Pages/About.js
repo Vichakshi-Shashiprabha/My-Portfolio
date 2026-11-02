@@ -41,7 +41,7 @@ function About() {
       title: "5. User Account Control",
       category: "Group Project",
       tech: "Mobile Ergonomics",
-      description: "Polished intuitive profile preference nodes focusing on simple interactive system state discovery.",
+      description: "Polished intuitive profile preference nodes focusing on simple interactive system state discovery",
       image: "/images/Profile.jpg"
     }
   ];
@@ -64,6 +64,45 @@ function About() {
             projectImage={item.image}
           />
         ))}
+      </div>
+
+      {/* Karate Coaching Section */}
+      <div className="extracurricular-section" style={{ 
+        marginTop: '70px', 
+        padding: '35px', 
+        background: 'rgba(255, 255, 255, 0.85)', 
+        borderRadius: '16px', 
+        display: 'flex', 
+        alignItems: 'center', 
+        gap: '30px', 
+        flexWrap: 'wrap',
+        boxShadow: '0 8px 25px rgba(0,0,0,0.06)'
+      }}>
+        <div style={{ flex: '0 0 280px', margin: '0 auto', textAlign: 'center' }}>
+          <img 
+            src="/images/karate.png" 
+            alt="Karate Coaching" 
+            style={{ 
+              width: '100%', 
+              maxWidth: '260px', 
+              height: 'auto',
+              borderRadius: '12px', 
+              objectFit: 'cover', 
+              boxShadow: '0 6px 15px rgba(0,0,0,0.1)'
+            }} 
+          />
+        </div>
+        <div style={{ flex: '1', minWidth: '280px' }}>
+          <span style={{ color: '#2563eb', fontWeight: '700', fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase' }}>
+            Leadership & Discipline
+          </span>
+          <h3 style={{ fontSize: '22px', margin: '8px 0', color: '#1e293b' }}>
+            Karate Coach & Assistant Instructor
+          </h3>
+          <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '14px', margin: 0 }}>
+            Alongside my IT studies at ITUM, I serve as a licensed Karate Coach at Ilma International Girls&apos; School and as an Assistant Coach at the Sri Lanka Genseiryu Karate Do Federation (certified by NISS). This role has honed my leadership, time-management, and high-level discipline, translating into structured focus for UI/UX engineering.
+          </p>
+        </div>
       </div>
     </section>
   );
