@@ -7,16 +7,39 @@
 }
 
 .contact-glass-card {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   padding: 40px;
   max-width: 650px;
   width: 100%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Glass Card Hover Effect */
+.contact-glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.08);
+}
+
+.contact-status-badge {
+  display: inline-block;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: background 0.3s ease;
+}
+
+.contact-status-badge:hover {
+  background: rgba(37, 99, 235, 0.15);
 }
 
 .contact-main-heading {
@@ -36,8 +59,8 @@
 .contact-details-box {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 460px;
+  gap: 16px;
+  max-width: 480px;
   margin: 0 auto;
   width: 100%;
 }
@@ -47,14 +70,28 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+/* Row Hover Effect for Interactive Feel */
+.contact-detail-row:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
 .detail-label {
-  width: 140px;
+  width: 130px;
   font-weight: 600;
   color: #475569;
   flex-shrink: 0;
   text-align: left;
+  font-size: 0.95rem;
 }
 
 .detail-value {
@@ -72,6 +109,25 @@
 }
 
 .contact-link:hover {
-  color: #7c3aed;
+  color: #2563eb;
   text-decoration: underline;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+  .contact-glass-card {
+    padding: 25px 15px;
+  }
+  .contact-detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 12px;
+  }
+  .detail-label {
+    width: 100%;
+  }
+  .contact-main-heading {
+    font-size: 1.8rem;
+  }
 }

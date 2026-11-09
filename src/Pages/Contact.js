@@ -5,12 +5,12 @@ function Contact() {
   return (
     <section className="contact-display-container">
       <div className="contact-glass-card">
-        {/* Status Badge එක */}
-        <div style={{ display: 'inline-block', background: 'rgba(37, 99, 235, 0.1)', color: '#2563eb', padding: '6px 16px', borderRadius: '20px', fontSize: '13px', fontWeight: '600', marginBottom: '15px' }}>
+        {/* Status Badge */}
+        <div className="contact-status-badge">
           🟢 Available for UI/UX Internships
         </div>
 
-        <h2 className="contact-main-heading">Let's Connect</h2>
+        <h2 className="contact-main-heading">Let&apos;s Connect</h2>
         <p className="contact-sub-paragraph">
           I am currently seeking UI/UX design internship opportunities to apply the layout concepts 
           and human-computer interaction frameworks learned during my IT Diploma journey.
