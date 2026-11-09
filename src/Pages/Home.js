@@ -45,7 +45,7 @@ function Home({ setActivePage }) {
           </p>
 
           {/* Working Navigation Buttons */}
-          <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', marginBottom: '20px' }}>
             <button 
               onClick={() => handleNavigation('projects')} 
               style={{ 
@@ -79,6 +79,28 @@ function Home({ setActivePage }) {
             >
               Get In Touch
             </button>
+          </div>
+
+          {/* View CV Button linked to public folder */}
+          <div>
+            <a 
+              href="/Vichakshi_Shashiprabha.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              style={{
+                display: 'inline-block',
+                background: '#047857',
+                color: '#ffffff',
+                padding: '10px 20px',
+                borderRadius: '8px',
+                textDecoration: 'none',
+                fontSize: '15px',
+                fontWeight: '600',
+                transition: '0.3s'
+              }}
+            >
+              View CV
+            </a>
           </div>
         </div>
 

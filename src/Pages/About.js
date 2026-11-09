@@ -46,6 +46,30 @@ function About() {
     }
   ];
 
+  const certificates = [
+    {
+      id: 1,
+      title: "Introduction to Figma",
+      issuer: "Simplilearn SkillUp",
+      date: "Oct 2026",
+      pdf: "/Introduction_to_Figma.pdf"
+    },
+    {
+      id: 2,
+      title: "Design Thinking for Beginners",
+      issuer: "Simplilearn SkillUp",
+      date: "Oct 2026",
+      pdf: "/Design_Thinking_for_Beginners.pdf"
+    },
+    {
+      id: 3,
+      title: "Introduction to Adobe XD",
+      issuer: "Simplilearn SkillUp",
+      date: "Nov 2026",
+      pdf: "/Introduction_to_Adobe_XD.pdf"
+    }
+  ];
+
   return (
     <section className="projects-display-wrapper">
       <div className="section-header-box">
@@ -64,6 +88,69 @@ function About() {
             projectImage={item.image}
           />
         ))}
+      </div>
+
+      {/* Certifications Section */}
+      <div className="certificates-section" style={{
+        marginTop: '70px',
+        padding: '35px',
+        background: 'rgba(255, 255, 255, 0.85)',
+        borderRadius: '16px',
+        boxShadow: '0 8px 25px rgba(0,0,0,0.06)'
+      }}>
+        <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+          <span style={{ color: '#2563eb', fontWeight: '700', fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase' }}>
+            Professional Credentials
+          </span>
+          <h3 style={{ fontSize: '24px', margin: '8px 0', color: '#1e293b' }}>
+            Certifications & Training
+          </h3>
+          <p style={{ color: '#64748b', fontSize: '14px', margin: 0 }}>
+            Completed via Simplilearn SkillUp
+          </p>
+        </div>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+          gap: '20px'
+        }}>
+          {certificates.map((cert) => (
+            <div key={cert.id} style={{
+              background: '#f8fafc',
+              padding: '20px',
+              borderRadius: '12px',
+              border: '1px solid #e2e8f0',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between'
+            }}>
+              <div>
+                <h4 style={{ color: '#1e293b', fontSize: '16px', margin: '0 0 8px 0' }}>{cert.title}</h4>
+                <p style={{ color: '#64748b', fontSize: '13px', margin: '0 0 15px 0' }}>{cert.issuer} • {cert.date}</p>
+              </div>
+              <a 
+                href={cert.pdf} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  background: '#2563eb',
+                  color: '#ffffff',
+                  padding: '8px 16px',
+                  borderRadius: '6px',
+                  textDecoration: 'none',
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  textAlign: 'center',
+                  transition: '0.3s'
+                }}
+              >
+                View Certificate (PDF)
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Karate Coaching Section */}

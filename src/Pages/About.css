@@ -27,3 +27,101 @@
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2.5rem;
 }
+
+
+.certificates-section {
+  margin-top: 70px;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.certificates-section > div:first-child {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.certificates-section > div:first-child span {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.certificates-section > div:first-child h3 {
+  font-size: 24px;
+  margin: 8px 0;
+  color: #1e293b;
+}
+
+.certificates-section > div:first-child p {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0;
+}
+
+.certificates-section > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.certificates-section > div:nth-child(2) > div {
+  background: #f8fafc;
+  padding: 20px;
+  borderRadius: 12px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificates-section > div:nth-child(2) > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.1);
+}
+
+.certificates-section > div:nth-child(2) > div h4 {
+  color: #1e293b;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.certificates-section > div:nth-child(2) > div p {
+  color: #64748b;
+  font-size: 13px;
+  margin: 0 0 15px 0;
+}
+
+.certificates-section > div:nth-child(2) > div a {
+  display: inline-block;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.certificates-section > div:nth-child(2) > div a:hover {
+  background: #1d4ed8;
+}
+
+
+.extracurricular-section {
+  margin-top: 70px;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
