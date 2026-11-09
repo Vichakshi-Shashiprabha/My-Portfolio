@@ -97,7 +97,7 @@ function About() {
             Leadership & Discipline
           </span>
           <h3 style={{ fontSize: '22px', margin: '8px 0', color: '#1e293b' }}>
-            Karate Coach & Assistant Instructor
+            Karate Coach 
           </h3>
           <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '14px', margin: 0 }}>
             Alongside my IT studies at ITUM, I serve as a licensed Karate Coach at Ilma International Girls&apos; School and as an Assistant Coach at the Sri Lanka Genseiryu Karate Do Federation (certified by NISS). This role has honed my leadership, time-management, and high-level discipline, translating into structured focus for UI/UX engineering.
